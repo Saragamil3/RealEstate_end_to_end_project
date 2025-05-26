@@ -1,19 +1,23 @@
 # RealEstate_end_to_end_project
-# Project Stages
-- Azure Cloud
-   - Create Azure SQL Server Database and connect it with SSMS
-- SQL Server Management System 
-    - Database Creation
-    - Importing files of data into database
-    - Writing SQL Queries to clean and analyze data
-- Power BI
-    - Connect Power BI with Azure sql database
-    - Cleaned data using Power Query
-    - Used DAX functions to analyze data
-    - Created visualization report
--  Python
-   - Created pipline with SQl server
-   - Analyzed data
+
+#Project Stages
+
+1. Azure Cloud
+   - Created an Azure SQL Server database.
+   - Connected the Azure SQL Database to SQL Server Management Studio (SSMS).
+
+2. SQL Server Management Studio (SSMS)
+   - Designed and created the database schema.
+   - Imported data files into the database.
+   - Wrote SQL queries to clean, transform, and analyze the data.
+3. Power BI
+  - Connected Power BI to the Azure SQL Database.
+  - Cleaned and transformed data using Power Query.
+  - Utilized DAX functions for advanced data analysis.
+  - Developed interactive visual reports and dashboards.
+4. Python
+   - Built a data pipeline integrated with SQL Server.
+   - Performed data analysis using Python libraries.
 # Create Azure SQL Server Database
   ![azure](https://github.com/Saragamil3/RealEstate_end_to_end_project/blob/main/Screenshot%202025-05-23%20161830.png)
 # SQL server management system 
