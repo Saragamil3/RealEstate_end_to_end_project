@@ -171,7 +171,7 @@ WITH
 );
 
 --Data preprocessing
---Add PropertyType column into table Proberties based on the values of propertylandusetypeid column
+--Add PropertyType column into table Proberties based on the values of  column propertylandusetypeid
 ALTER TABLE Properties
 ADD  PropertyType VARCHAR(50);
 
