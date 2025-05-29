@@ -170,7 +170,41 @@ WITH
     TABLOCK
 );
 
+--Data preprocessing
+--Add PropertyType column into table Proberties based on the values of propertylandusetypeid column
+ALTER TABLE Properties
+ADD  PropertyType VARCHAR(50);
 
+UPDATE Properties
+SET PropertyType=
+CASE
+when propertylandusetypeid='31' then 'Commercial/Office/Residential Mixed Used'
+when propertylandusetypeid='46' then 'Multi-Story Store'
+when propertylandusetypeid='47' then 'Store/Office (Mixed Use)'
+when propertylandusetypeid='246' then 'Duplex (2 Units, Any Combination)'
+when propertylandusetypeid='247' then 'Triplex (3 Units, Any Combination)'
+when propertylandusetypeid='248' then 'Quadruplex (4 Units, Any Combination)'
+when propertylandusetypeid='260' then 'Residential General'
+when propertylandusetypeid='261' then 'Single Family Residential'
+when propertylandusetypeid='262' then 'Rural Residence'
+when propertylandusetypeid='263' then 'Mobile Home'
+when propertylandusetypeid='264' then 'Townhouse'
+when propertylandusetypeid='265' then 'Cluster Home'
+when propertylandusetypeid='266' then 'Condominium'
+when propertylandusetypeid='267' then 'Cooperative'
+when propertylandusetypeid='268' then 'Row House'
+when propertylandusetypeid='269' then 'Planned Unit Development'
+when propertylandusetypeid='270' then 'Residential Common Area'
+when propertylandusetypeid='271' then 'Timeshare'
+when propertylandusetypeid='273' then 'Bungalow	'
+when propertylandusetypeid='274' then 'Zero Lot Line'
+when propertylandusetypeid='275' then 'Manufactured, Modular, Prefabricated Homes'
+when propertylandusetypeid='276' then 'Patio Home'
+when propertylandusetypeid='279' then 'Inferred Single Family Residential	'
+when propertylandusetypeid='290' then 'Vacant Land - General'
+when propertylandusetypeid='291' then 'Residential Vacant Land'
+ELSE ' '  
+END;
 
 
 
